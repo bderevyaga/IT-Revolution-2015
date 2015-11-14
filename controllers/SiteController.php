@@ -170,7 +170,8 @@ class SiteController extends Controller
 
     public function actionAddevent()
     {
-        return ;
+        $data = Yii::$app->request->post();
+        print_r($data);
     }
 
     public function actionUseredit()

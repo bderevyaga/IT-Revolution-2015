@@ -77,8 +77,10 @@ use yii\jui\DatePicker;
 					  type: 'POST',
 					  url: '/site/addevent',
 					  data: data,
-					  success: success,
-					  dataType: dataType
+					  dataType: 'json',
+					  success: function(msg){
+					    console.log(msg);
+					  }
 				});
 			  event.preventDefault();
 			});
