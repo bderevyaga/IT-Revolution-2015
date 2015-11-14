@@ -12,23 +12,23 @@ $this->title = Yii::$app->user->identity->username;
 		Nav::widget([
 		    'items' => [
 		        [
-		            'label' => 'Моя сторінк',
+		            'label' => 'Моя сторiнка',
 		            'url' => ['site/user'],
 		        ],
 		        [
-		            'label' => 'Мої Друзі',
+		            'label' => 'Моi Друзi',
 		            'url' => ['site/friends'],
 		        ],
 		       	[
-		            'label' => 'Мої Повідомлення',
+		            'label' => 'Моi Повідомлення',
 		            'url' => ['site/chat'],
 		        ],
 		        [
-		            'label' => 'Мій Магазин',
+		            'label' => 'Мiй Магазин',
 		            'url' => ['site/store'],
 		        ],
 		        [
-		            'label' => 'Бронювання котлів',
+		            'label' => 'Бронювання котлiв',
 		            'url' => ['site/hostel'],
 		        ],
 		    ],
