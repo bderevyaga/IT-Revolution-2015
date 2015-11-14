@@ -168,6 +168,11 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
+    public function actionAddevent()
+    {
+        return ;
+    }
+
     public function actionUseredit()
     {
         if(Yii::$app->request->isPost){

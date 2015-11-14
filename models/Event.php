@@ -51,4 +51,12 @@ class Event extends \yii\db\ActiveRecord
         $departments = $query->where([ 'user_id' => $user_id])->asArray()->all();
         return $departments;
     }
+
+    public static function setAdd($data)
+    {
+        $query = new Event();
+        $query->user_id = Yii::$app->user->identity->id;
+        $query->title = $data[0]['title'];
+        $query->start = $data[0]['start'];
+    }
 }

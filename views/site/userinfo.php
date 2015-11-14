@@ -47,13 +47,13 @@ use yii\jui\DatePicker;
 			<div class="form-group">
 			<?php
 				echo DatePicker::widget([
+					'name'  => 'date',
 				    'attribute' => 'from_date',
 				    'language' => 'ru',
 				    'dateFormat' => 'yyyy-MM-dd',
 				    'options' => [
 				    	'class' => 'form-control',
 				    	'placeholder' => 'Дата',
-				    	'name' => 'date',
 				    ], 
 				]);
 			?>
@@ -72,7 +72,14 @@ use yii\jui\DatePicker;
 <script type="text/javascript">
         $(document).ready(function() {
         	$( "form" ).submit(function( event ) {
-			  console.log( $( "form" ).serializeArray() );
+			  var data = $( "form" ).serializeArray();
+			  	$.ajax({
+					  type: 'POST',
+					  url: '/site/addevent',
+					  data: data,
+					  success: success,
+					  dataType: dataType
+				});
 			  event.preventDefault();
 			});
 			    $('.fullcalendar').fullCalendar({
