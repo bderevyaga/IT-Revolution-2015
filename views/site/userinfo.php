@@ -20,10 +20,10 @@ use yii\jui\DatePicker;
 	</div>
 	<div class="col-sm-9">
 		<?php if(isset($userinfo[0]['avatar']) && $userinfo[0]['avatar']!=''){ ?>
-			<p>iм'я:</p><p class="infoLabel"><?= $userinfo[0]['name'] ?></p>
-			<p>Дата народження:</p> <p class="infoLabel"><?= $userinfo[0]['date_birth'] ?></p>
-			<p>Родной город:</p> <p class="infoLabel"><?= $userinfo[0]['address'] ?></p>
-			<p>Доп. телефон:</p> <p class="infoLabel"><?= $userinfo[0]['phone'] ?></p>
+			<p>iм'я:            <label><?= $userinfo[0]['name'] ?></label></p>
+			<p>Дата народження: <label><?= $userinfo[0]['date_birth'] ?></label></p>
+			<p>Родной город:    <label><?= $userinfo[0]['address'] ?></label></p>
+			<p>Доп. телефон:    <label><?= $userinfo[0]['phone'] ?></label></p>
 		<?php }else{ ?>
 			<h4>Аноним</h4>
 		<?php } ?>
