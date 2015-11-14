@@ -6,6 +6,7 @@
 use kartik\helpers\Html;
 use kartik\helpers\Enum;
 use yii\jui\DatePicker;
+use yii\helpers\Url;
 
 ?>
 <div class="row">
@@ -71,18 +72,22 @@ use yii\jui\DatePicker;
 <br/>
 <script type="text/javascript">
         $(document).ready(function() {
-        	$( "form" ).submit(function( event ) {
+        	$("form button").click(function(){
+
+        	});
+        	$( "form" ).submit(function( e ) {
 			  var data = $( "form" ).serializeArray();
+			  	e.preventDefault();
+				(e.cancelBubble) ? e.cancelBubble : e.stopPropagation;
 			  	$.ajax({
 					  type: 'POST',
-					  url: '/site/addevent',
+					  url: <?= Url::toRoute('site/addevent'); ?>,
 					  data: data,
 					  dataType: 'json',
 					  success: function(msg){
 					    console.log(msg);
 					  }
 				});
-			  event.preventDefault();
 			});
 			    $('.fullcalendar').fullCalendar({
             	defaultView: 'agendaWeek',

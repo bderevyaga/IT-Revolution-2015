@@ -239,6 +239,6 @@ padding:4px;
     font-family: Charming;
 }
 .mainLogo{
-height=100%;
-width=auto;
+    max-height: 220%;
+    margin-top: -10px;
 }
