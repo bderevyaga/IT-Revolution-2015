@@ -20,10 +20,10 @@ use yii\jui\DatePicker;
 	</div>
 	<div class="col-sm-9">
 		<?php if(isset($userinfo[0]['avatar']) && $userinfo[0]['avatar']!=''){ ?>
-			<h4><?= $userinfo[0]['name'] ?></h4>
-			<p>Дата народження: <?= $userinfo[0]['date_birth'] ?></p>
-			<p>Родной город: <?= $userinfo[0]['address'] ?></p>
-			<p>Доп. телефон: <?= $userinfo[0]['phone'] ?></p>
+			<p>iм'я:</p><p class="infoLabel"><?= $userinfo[0]['name'] ?></p>
+			<p>Дата народження:</p> <p class="infoLabel"><?= $userinfo[0]['date_birth'] ?></p>
+			<p>Родной город:</p> <p class="infoLabel"><?= $userinfo[0]['address'] ?></p>
+			<p>Доп. телефон:</p> <p class="infoLabel"><?= $userinfo[0]['phone'] ?></p>
 		<?php }else{ ?>
 			<h4>Аноним</h4>
 		<?php } ?>
@@ -92,8 +92,8 @@ use yii\jui\DatePicker;
                     center: 'title',
                     right: 'month,agendaWeek,agendaDay'
                 },
-                monthNames: ['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'],
-                monthNamesShort: ['Січ.','Лют.','Бер.','Кві.','Тра.','Чер.','Лип.','Сер.','Вер.','Жов.','Лис.','Гру.'],
+                monthNames: ['Сiчень','Лютий','Березень','Квiтень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'],
+                monthNamesShort: ['Сiч.','Лют.','Бер.','Квi.','Тра.','Чер.','Лип.','Сер.','Вер.','Жов.','Лис.','Гру.'],
                 dayNames: ["Субота","Понеділок","Вівторок","Среда","Четверг","Пятница","Суббота"],
                 dayNamesShort: ["НД","ПН","ВТ","СР","ЧТ","ПТ","СБ"],
                 buttonText: {
@@ -102,7 +102,7 @@ use yii\jui\DatePicker;
                     prevYear: "&nbsp;&lt;&lt;&nbsp;",
                     nextYear: "&nbsp;&gt;&gt;&nbsp;",
                     today: "Сегодня",
-                    month: "Місяць",
+                    month: "Мiсяць",
                     week: "Тиждень",
                     day: "День"
                 }

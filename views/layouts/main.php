@@ -40,12 +40,12 @@ AppAsset::register($this);
             Yii::$app->user->isGuest ?
                 ['label' => 'Про нас', 'url' => ['/site/about']]
             :
-                ['label' => 'Редагувати данні', 'url' => ['/site/useredit']],
+                ['label' => 'Редагувати даннi', 'url' => ['/site/useredit']],
             Yii::$app->user->isGuest ?
-                ['label' => 'Реєстрація', 'url' => ['/site/registration']]
+                ['label' => 'РеЄстрацiя', 'url' => ['/site/registration']]
             :  
                  [
-                    'label' => 'Вихід',
+                    'label' => 'Вихiд',
                     'url' => ['/site/logout'],
                     'linkOptions' => ['data-method' => 'post']
                 ],
