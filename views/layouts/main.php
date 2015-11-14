@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'TheSpiritOfTheInternet',
+        'brandLabel' => '<img src="/web/css/logo.jpg" alt="*">The_Spirit_Of_The_Internet',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -64,7 +64,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; TheSpiritOfTheInternet <?= date('Y') ?></p>
+        <p class="pull-left">&copy; The_Spirit_Of_The_Internet <?= date('Y') ?></p>
     </div>
 </footer>
 
