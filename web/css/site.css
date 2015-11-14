@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Charming; /* имя шрифта для CSS правил */
+    src: local("Charming"), /* проверяем наличие шрифта в ОС пользователя */
+         url(./Charming.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+  }
 html,
 body {
     height: 100%;
@@ -8,6 +13,7 @@ body {
     height: auto;
     margin: 0 auto -60px;
     padding: 0 0 60px;
+	background-color:black;
 }
 
 .wrap > .container {
@@ -88,4 +94,131 @@ a.desc:after {
     border-left: 3px solid #eed3d7;
     padding: 10px 20px;
     margin: 0 0 15px 0;
+}
+//add by Vitek
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
+    style:none;
+}
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
+    color: red;
+}
+//.btn-primary{
+	style:none;
+}
+.btn-primary {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+
+}
+.btn-primary:hover {
+	//	style:none;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+		box-shadow: 0px 0px 10px 1px rgba(255, 0, 0, 0.75);
+}
+.btn-primary:focus, .btn-primary.focus {
+	//		style:none;
+}
+.btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+}
+.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+	//		style:none;
+}	
+.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+}
+.btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+}
+p.help-block, p.help-block-error{
+	color:red!important;
+}
+.AuthText{
+	color:red;
+text-align:center;
+font-size: 18px;
+font-style: italic;
+padding-bottom:10px;
+}
+.mainTitleText{
+	color:red;
+text-align:center;
+font-size: 30px;
+font-style: italic;
+padding-bottom:10px;
+text-shadow: 1px 1px 2px black, 0 0 1em red; /* Параметры тени */
+}
+   .AuthText, .mainTitleText{
+    font-family: Charming;
+}
+   h4{
+    font-family: Charming;
+}
+.navbar-inverse {
+    background-color: rgba(170,14,15,1);
+    border-color: rgba(170,14,15,1);
+	margin-top:10px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color:rgba(170,14,15,1);
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+.col-sm-9 p{
+padding:4px;
+	color:rgba(170,14,15,1);
+	font-family: Charming;
+	background-color: rgba(255,211,211,1);
+	border-radius:7px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: rgba(255,211,211,1);
+}
+.fullcalendar{
+	background-color:rgba(255,211,211,1);
+	border-radius:4px;
+	padding:2px;
+	
+}
+.fc-time-grid .fc-slats td {
+    height: 1.5em;
+    border-bottom: 0;
+	border-color:rgba(170,14,15,1);
+}
+.fc th, .fc td {
+    border-color: red;
+}
+.fc-unthemed .fc-divider, .fc-unthemed .fc-popover .fc-header {
+    background: red;
+}
+.fc-toolbar h2 {
+    font-family: Charming;
+}
+.fc-event {
+    position: relative;
+    display: block;
+    font-size: .85em;
+    line-height: 1.3;
+    border-radius: 3px;
+    border: 1px solid rgba(255,211,211,1);
+    background-color: rgba(170,14,15,1);
+    font-weight: normal;
+}
+.fc{
+	    font-family: Charming;
 }
