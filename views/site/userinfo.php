@@ -18,6 +18,52 @@ use yii\helpers\Url;
 			echo '<img src="/data/img/200_300.png" style="max-width: 100%; max-height: 100%;">';
 		}
 	 ?>
+	 <br>
+	 <a href='#' class="btn btn-danger btn-block five">Пятниця 13</a>
+		 <div style="display: none;" class="fiveh">
+			13.02.2009
+			13.03.2009
+			13.11.2009
+			13.03.2010
+			13.05.2011
+			13.01.2012
+			13.04.2012
+			13.07.2012
+			13.09.2013
+			13.12.2013
+			13.06.2014
+			13.02.2015
+			13.03.2015
+			13.11.2015
+			13.05.2016
+			13.01.2017
+			13.10.2017
+			13.04.2018
+			13.07.2018
+			13.09.2019
+			13.12.2020
+			13.03.2020
+			13.11.2020
+			13.08.2021
+			13.05.2022
+			13.01.2023
+			13.10.2023
+			13.09.2024
+			13.12.2024
+			13.06.2025
+			13.02.2026
+			13.03.2026
+			13.11.2026
+			13.08.2027
+			13.10.2028
+		</div>
+		<script type="text/javascript">
+		    $(document).ready(function() {
+				$('.five').click(function() {
+					$('.fiveh').show();
+				});
+			});
+		</script>
 	</div>
 	<div class="col-sm-9">
 		<?php if(isset($userinfo[0]['avatar']) && $userinfo[0]['avatar']!=''){ ?>
