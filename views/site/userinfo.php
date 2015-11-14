@@ -5,6 +5,7 @@
 
 use kartik\helpers\Html;
 use kartik\helpers\Enum;
+use yii\jui\DatePicker;
 
 ?>
 <div class="row">
@@ -41,6 +42,27 @@ use kartik\helpers\Enum;
       'events'=> $events,
   ));
 ?>
+<br/>
+		<form>
+			<div class="form-group">
+			<?php
+				echo DatePicker::widget([
+				    'attribute' => 'from_date',
+				    'language' => 'ru',
+				    'dateFormat' => 'yyyy-MM-dd',
+				    'options' => [
+				    	'class' => 'form-control',
+				    	'placeholder' => 'Дата',
+				    	'name' => 'date',
+				    ], 
+				]);
+			?>
+			</div>
+			<div class="form-group">
+		      <input type="text" name="text"  class="form-control" placeholder="Опис">
+		    </div>
+			<button type="submit" class="btn btn-default">Зберегти шабаш</button>
+		</form>
 	</div>
 </div>
 <br/>
@@ -49,7 +71,11 @@ use kartik\helpers\Enum;
 <br/>
 <script type="text/javascript">
         $(document).ready(function() {
-            $('.fullcalendar').fullCalendar({
+        	$( "form" ).submit(function( event ) {
+			  console.log( $( "form" ).serializeArray() );
+			  event.preventDefault();
+			});
+			    $('.fullcalendar').fullCalendar({
             	defaultView: 'agendaWeek',
                 firstDay: 1,
                 height: 450,

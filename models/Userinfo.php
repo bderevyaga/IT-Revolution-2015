@@ -60,8 +60,6 @@ class Userinfo extends \yii\db\ActiveRecord
             $customer->name = $data['Userinfo']['name'];
             $customer->save();
         }
-        
-
     }
 }
 
